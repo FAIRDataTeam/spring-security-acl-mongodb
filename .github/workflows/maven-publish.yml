@@ -14,8 +14,8 @@ concurrency:
 jobs:
   test:
     uses: FAIRDataTeam/github-workflows/.github/workflows/maven-verify.yml@v3
-    secrets: inherit
     with:
+      mvn-options: -Dgpg.skip
       db-type: "mongodb"
       db-version: 8
   publish:

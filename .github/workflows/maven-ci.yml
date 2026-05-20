@@ -15,3 +15,8 @@ concurrency:
 jobs:
   test:
     uses: FAIRDataTeam/github-workflows/.github/workflows/maven-verify.yml@v3
+    with:
+      java-version: 21
+      # the package uses de.flapdoodle.embed.mongo so no need for external db
+      db-type: "none"
+      db-version: 0

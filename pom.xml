@@ -57,10 +57,10 @@
     </parent>
 
     <properties>
-        <plugin.javadoc.version>3.11.2</plugin.javadoc.version>
-        <plugin.source.version>3.3.1</plugin.source.version>
-        <plugin.publishing.version>0.7.0</plugin.publishing.version>
-        <plugin.gpg.version>3.2.7</plugin.gpg.version>
+        <plugin.javadoc.version>3.12.0</plugin.javadoc.version>
+        <plugin.source.version>3.4.0</plugin.source.version>
+        <plugin.publishing.version>0.10.0</plugin.publishing.version>
+        <plugin.gpg.version>3.2.8</plugin.gpg.version>
     </properties>
 
     <dependencies>
@@ -104,7 +104,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
+                <version>3.15.0</version>
                 <configuration>
                     <!-- https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-6.1-Release-Notes#parameter-name-retention -->
                     <parameters>true</parameters>

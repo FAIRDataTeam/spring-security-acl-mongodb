@@ -15,8 +15,8 @@ jobs:
   test:
     uses: FAIRDataTeam/github-workflows/.github/workflows/maven-verify.yml@v3
     with:
-      db-type: "none"
-      db-version: 0
+      db-type: "mongodb"
+      db-version: 8
   publish:
     needs: test
     uses: FAIRDataTeam/github-workflows/.github/workflows/maven-publish.yml@v3

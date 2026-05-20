@@ -14,6 +14,7 @@ concurrency:
 jobs:
   test:
     uses: FAIRDataTeam/github-workflows/.github/workflows/maven-verify.yml@v3
+    secrets: inherit
     with:
       db-type: "mongodb"
       db-version: 8

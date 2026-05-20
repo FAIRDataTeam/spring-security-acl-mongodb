@@ -70,8 +70,6 @@ import static org.assertj.core.api.Assertions.fail;
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {MongoDBMutableAclServiceTest.ContextConfig.class},
 		loader = AnnotationConfigContextLoader.class)
-@TestExecutionListeners(listeners = {MongoDBTestExecutionListener.class},
-		mergeMode = TestExecutionListeners.MergeMode.MERGE_WITH_DEFAULTS)
 public class MongoDBMutableAclServiceTest {
 
 	@Configuration

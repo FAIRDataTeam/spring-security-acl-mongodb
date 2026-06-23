@@ -6,7 +6,7 @@
 
     <groupId>org.fairdatateam.security</groupId>
     <artifactId>spring-security-acl-mongodb</artifactId>
-    <version>6.0.4</version>
+    <version>6.0.5</version>
     <packaging>jar</packaging>
 
     <name>Spring Security ACL for MongoDB</name>
@@ -83,11 +83,13 @@
         <!-- Spring test framework -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artifactId>spring-boot-starter-security-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -113,12 +115,12 @@
                     <publishingServerId>central</publishingServerId>
                     <!-- visit https://central.sonatype.com/publishing/deployments to publish manually -->
                     <!-- also visit that site to debug validation issues -->
-                    <autoPublish>false</autoPublish>
+                    <autoPublish>true</autoPublish>
                 </configuration>
             </plugin>
             <!-- https://central.sonatype.org/publish/publish-maven/#gpg-signed-components -->
             <!-- https://maven.apache.org/plugins/maven-gpg-plugin/usage.html -->
-            <!-- for local test  installations use -Dgpg.skip -->
+            <!-- for local test installations use -Dgpg.skip -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
